@@ -13,7 +13,7 @@ def _event_loop():
                 run = False
 
 
-def start(size=None):
+def start(size=None, window_name='Sprite Helper'):
     """ Opens the pygame window and keeps it open. """
 
     global screen
@@ -23,7 +23,7 @@ def start(size=None):
 
     # Setup pygame window.
     pygame.init()
-    pygame.display.set_caption('Sprite Helper')
+    pygame.display.set_caption(window_name)
     screen = pygame.display.set_mode(size)
     pygame.display.flip()
 
